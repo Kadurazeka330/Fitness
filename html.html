@@ -5,12 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../fitness/font-awesome.min.css">
-    <link rel="stylesheet" href="../fitness/ css.css">
+    <link rel="stylesheet" href="../Fitness/font-awesome.min.css">
+    <link rel="stylesheet" href="../Fitness/ css.css">
 </head>
 <body>
     <div class="wraper-menu">
-        <div class="wraper">
         <div id="icon"><a href="#">===</i></a> </div>
         <div class=phone><a href="tel:+380936434903">+38 (093) 643-49-03</a></div>
            <ul id="menu" class="hidden" >
@@ -20,9 +19,7 @@
                </li>
                <li class="menu" ><a href="#3">Історія клієнтів</a></li>
                <li class="menu" ><a href="#4" data-modal>Записатися на пробне тренування</a></li>
-               <li class="menu" ><a href="#">Калькулятор калорій</a></li>
            </ul>
-        </div>
     </div>
     <section class="intro">
         <div class="video">
@@ -106,7 +103,7 @@
                 </div> 
                 <div class="wraper_conteiner">
                     <img class="img_icon_trening" src="./img/kisspng-check-mark-computer-icons-clip-art-green-check-mark-2-icon-5ab1d1c074ab99.0084112415216030084779.png" alt="#">
-                    <p class="title_wraper">Тренування в "ZOOM"</p> btn_cart1
+                    <p class="title_wraper">Тренування в "ZOOM"</p>
                 </div>
               </div>
               <div class="price">2500грн/1місяць</div>
@@ -166,7 +163,7 @@
     </div>
     <h1 id="2">Мене звать Євгеній</h1>
     <div class="coteiner-infoCoah">
-            <img class="img-coah" src="../fitness/img/coah.jpg" alt="#">
+            <img class="img-coah" src="../Fitness/img/coah.jpg" alt="#">
             <div class="quote-container">
                 <i class="pin"></i>
                 <blockquote class="note yellow">
@@ -190,11 +187,6 @@
                 </blockquote>
               </div>
     </div>
-    <div class="conteiner_coments">
-        <img class="img_coment" src="./img/coment1.jpg" alt="#">
-        <img class="img_coment" src="./img/coment2.jpg" alt="#">
-        <img class="img_coment" src="./img/coment3.jpg" alt="#">
-    </div>
     <div id="form-wrapper">
         <h1>Записатися на пробне тренування</h1>
         <form id="4">
@@ -212,9 +204,6 @@
             </div>
         </form>
         </div>
-          <div class="tell_me">
-            <button class="call" data-modal ><a href="#">Зворотній звязок</a></button>
-        </div>
         <div class="form_call">
             <div class="modal-content">
                 <div class="modal-header">
@@ -230,11 +219,64 @@
                 <div id="errorMess" class="errorMess"></div>
               </div>
         </div>
+    <section class="calculator">
+        <div class="calculator__title">
+            Бажаєте розрахувать добову калорійність
         </div>
+        <div class="calculator__slider">
+            <div class="calculator__inner">
+                <div class="slider-1">
+                    <div class="sex__inner">
+                        <div class="sex__title">
+                            Вкажіть ваш пол
+                        </div>
+                        <div data-="" id="man">Чоловік</div>
+                        <div id="woman">Жінка</div>
+                    </div>
+                    <div class="body__inner">
+                        <div class="body__title">
+                            Ваша конституція тіла
+                        </div>
+                       <input id="weight" type="text" placeholder="Ваша вага, кг">
+                       <input id="height" type="text" placeholder="Ваш зріст">
+                       <input id="age" type="text" placeholder="Ваша вік">
+                    </div>
+                </div>
+                <div class="slider-2">
+                    <div class="activity__inner">
+                        <div class="activity__title">
+                            Ваша активність
+                        </div>
+                       <input type="text" placeholder="Мінімальний рівень активності">
+                       <input type="text" placeholder="Низький рівень активності">
+                       <input type="text" placeholder="Середній рівень активності">
+                       <input type="text" placeholder="Високий рівень">
+                       <input type="text" placeholder="Дуже високий">
+                    </div>
+                    <div class="purpose__inner">
+                        <div class="purpose__title">
+                            Ваша ціл
+                        </div>
+                       <input type="text" placeholder="Схуднути">
+                       <input type="text" placeholder="Набрати">
+                       <input type="text" placeholder="Підтримувати">
+                    </div>
+                </div>
+                <div class="slider-3">
+                    <div class="resul__title">
+                        Ваша добова норма калорій
+                    </div>
+                    <div class="input__resul"></div>
+                </div>
+            </div>
+        </div>
+        <button class="calc__prev">Назад</button>
+        <button class="calc__next" >Вперед</button>
+    </section>
     <!-- Подключаем jQuery -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <!-- Подключаем слайдер Slick -->
     <script src="./slick.min.js"></script>
-    <script src="../fitness/js.js"></script>
+    <script src="../Fitness/js.js"></script>
 </body>
 </html>

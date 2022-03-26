@@ -1,31 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
 @import url(http://fonts.googleapis.com/css?family=Satisfy);
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
 
 body *{ padding: 0;
          margin: 0;
-         background-color: rgb(0, 0, 0);
          color: rgb(187, 168, 132);
          box-sizing: border-box;
-         font-family:'Montserrat', sans-serif;
+         font-family:Arial, Helvetica, sans-serif;
 }
 
 h1{ font-size: 24px;
     text-align: center;
     padding-top: 20px;
     font-family:'Montserrat', sans-serif;
+    color: rgb(228, 179, 54);
 }
 
 h2{
     font-size: 21px;
     color: rgb(228, 179, 54);
     align-items: center;
-    font-family:'Montserrat', sans-serif;
+    font-family:Arial, Helvetica, sans-serif;
 }
 
 
 li.menu{
     display: block;
-    box-shadow: 4px 10px 6px -5px  rgb(228, 179, 54);
+    box-shadow: 4px 10px 6px -5px rgb(228, 179, 54);
     margin-left: 3%;
 }
 
@@ -52,7 +53,7 @@ li.menu1  a{
 
  a:hover{
      font-size: 17px;
-    box-shadow: 1px 5px 10px -5px rgb(206, 0, 0);
+    box-shadow: 1px 5px 10px -5px rgb(228, 179, 54);
     transition: all 0.5s ease;
     
    }
@@ -162,13 +163,14 @@ li.menu{
 }
 h1.title_fon_text{
     background: transparent;
-    color:  rgb(228, 179, 54);;
+    color:  rgb(228, 179, 54);
     text-align: center;
+    padding: 0;
     background-color: transparent;
     font-size: 56px;
     font-weight: 900;
-    border-top: 1px solid  rgb(228, 179, 54);
-    border-bottom: 1px solid  rgb(228, 179, 54);
+   
+   
     transform: translate(0px,120%);
     opacity: 0;
     transition: all 0.8s ease 0s;
@@ -187,6 +189,7 @@ h1.title_fon_text._active{
     background: transparent;
     text-align: center;
     margin-top: 15px;
+    font-family: 'Lato', sans-serif;
  }
 .btn_title_fon_info a{
     text-decoration: none;
@@ -196,6 +199,8 @@ h1.title_fon_text._active{
     color: rgb(228, 179, 54);;
     font-size: 30px;
     font-weight: 900;
+    padding: 5px;
+    font-family: 'Lato', sans-serif;
 }
 .phone{
   position: absolute;
@@ -208,7 +213,7 @@ h1.title_fon_text._active{
 }
 .btn_title_fon_info a:hover{
      font-size:35px;
-    box-shadow: 1px 5px 10px -5px rgb(206, 0, 0);
+    box-shadow: 1px 5px 10px -5px rgb(228, 179, 54);
     transition: all 0.5s ease;
    }
    @media(max-width:425px){
@@ -292,13 +297,13 @@ h1.title_fon_text._active{
 .price{
     text-align: center;
     margin-top: 10px;
-    background-color:rgba(209, 0, 0, 0.878);;
+    background-color:rgba(255, 123, 0, 0.878);
     border: 2px solid black;
     max-width: 170px;
     font-size: 17px;
     font-weight: 900;
     color: rgb(0, 0, 0);
-    box-shadow: 1px 15px 10px -5px rgb(128, 0, 0);
+    box-shadow: 1px 15px 10px -5px  rgba(255, 123, 0, 0.878);
     position: absolute;
     bottom: 10%;
     left: 1%;
@@ -569,30 +574,7 @@ transform: rotate(57.5deg);
         
       }
 }
-.call{
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    border-radius: 60%;
-    background: red;
-    opacity: 0.7;
-    z-index: 11;
-}
-.tell_me button {
-    border-radius: 60%;
-    background: red;
-    opacity: 0.7;
-    z-index: 11;
-}
-.tell_me button .call a{
-    text-decoration: none;
-   
-}
-@media(max-width:768px){
-    .call{
-        display: none;
-    }
-}
+
 /*Модальне вікно зворотнього звязку*/
 .form_call{
     display: none;
